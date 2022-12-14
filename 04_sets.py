@@ -34,12 +34,14 @@ myset.add(5)
 print(myset)
 
 
+
 # removing things from a set, if you try to remove an item that does not exist
 # it will throw an error
 myset.remove(5)
 print(myset)
 
 
-
 # remove element, if element does not exist, nothing happens
 myset.discard(4)
+
+# https://www.youtube.com/watch?v=HGOBQPFzWKo&t=2725s
