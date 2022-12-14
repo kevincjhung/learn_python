@@ -39,7 +39,6 @@ print(dict2)
 
 
 # or you can use the pop method
-
 mydict = {
     "name": "Sam",
     "age": 27,
@@ -71,7 +70,7 @@ except:
     print('error')
 
 
-# looping through a dictionary
+# Printing all the keys in a dictionary
 for key in mydict:
     print(key)
 
@@ -80,5 +79,53 @@ for key in mydict:
 # the keys method returns a list with all the keys inside
 for key in mydict.keys(): 
     print(key)
+
+
+# loop through all values in dictionary
+mydict = {
+    "name": "Ashley",
+    "age": 27,
+    "city": "Berlin"
+}
+
+for value in mydict.values():
+    print(value)
+
+
+# loop through both all keys and values in a dictionary
+for key, value in mydict.items():
+    print(key, " : ", value) 
+
+
+
+# copying a dictionary 
+mydict = {
+    "name": "Olivier",
+    "age": 27,
+    "city": "Marseille"
+}
+
+
+# copying a dictionary
+mydict_copy = dict(mydict) 
+
+
+# merge two dictionaries, overwriting the existing values
+dict1 = {
+    "name": "Olivier",
+    "age": 27,
+    "email": "olivier@mail.com"
+}
+
+dict2 = {
+    "name": "Alex",
+    "age": 27,
+    "city": "Paris"
+}
+
+# dict1 will be overwritten by values from dict2
+# non-existing values will be added
+dict1.update(dict2) 
+print(dict1)
 
 
