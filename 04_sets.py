@@ -44,4 +44,25 @@ print(myset)
 # remove element, if element does not exist, nothing happens
 myset.discard(4)
 
-# https://www.youtube.com/watch?v=HGOBQPFzWKo&t=2725s
+
+# iterate through a set
+for i in myset:
+    print(i)
+
+# check if an element is inside a set
+if i in myset:
+    print('yes')
+
+
+# Union and intersection
+odds = {1, 3, 5, 7, 9}
+evens = {0, 2, 4, 6, 8}
+primes = {2, 3, 5, 7}
+
+# union combines both without duplication
+u = odds.union(evens)
+print(u)
+
+# intersection 
+i = odds.intersection(evens)
+
